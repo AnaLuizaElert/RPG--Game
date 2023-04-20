@@ -4,12 +4,12 @@ import { StyleSheet, Text, View, SafeAreaView, Image, Button, Alert, ImageBackgr
 
 const image = {uri: 'https://marketplace.canva.com/EAEtlMvlBDg/1/0/900w/canva-pastel-peach-watercolour-mobile-phone-wallpaper--8ZGLXxywc8.jpg'};
 
-export default function Home() {
+export default function Home({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground source={image} resizeMode="cover" style={styles.image}>
         <Text style={styles.text}>Wordle Game</Text>
-        <Pressable style={styles.button} onPress={() => alert("jogando")}>
+        <Pressable style={styles.button}  onPress={() => navigation.navigate('Game')}>
           <Text style={styles.button_text}>JOGAR</Text>
         </Pressable>
       </ImageBackground>
