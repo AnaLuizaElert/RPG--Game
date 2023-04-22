@@ -1,11 +1,17 @@
 import * as React from 'react';
 import Home from './component/Home/home';
 import Game from './component/Game/game';
-import Test from './component/Test/test';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack'
+import { useFonts } from 'expo-font';
+
 
 const Stack = createNativeStackNavigator();
+
+
+  // const [loaded] = useFonts({
+  //   Oval: require('./assets/fonts/NovaOval-Regular.ttf')
+  // });
 
 const App = () => {
   return (
@@ -17,7 +23,7 @@ const App = () => {
          options={{
           title: "Pense",
           headerStyle: {
-            backgroundColor: "purple"
+            backgroundColor: "#566637"
           },
           headerTintColor: "white"
          }}
@@ -26,9 +32,9 @@ const App = () => {
          name='Home'
          component={Home}
          options={{
-          title: "Bem-vindo",
+          title: "Welcome",
           headerStyle: {
-            backgroundColor: "purple"
+            backgroundColor: "#566637"
           },
           headerTintColor: "white"
          }}

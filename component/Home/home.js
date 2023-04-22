@@ -1,14 +1,13 @@
 import React from "react";
 import { StyleSheet, Text, View, SafeAreaView, Image, Button, Alert, ImageBackground, Pressable} from 'react-native';
 
-
-const image = {uri: 'https://marketplace.canva.com/EAEtlMvlBDg/1/0/900w/canva-pastel-peach-watercolour-mobile-phone-wallpaper--8ZGLXxywc8.jpg'};
+const image = {uri: 'https://templatefor.net/wp-content/uploads/2018/04/iPhone-forest-mysterious-wallpaper-245619875-576x1024.jpg'};
 
 export default function Home({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground source={image} resizeMode="cover" style={styles.image}>
-        <Text style={styles.text}>Wordle Game</Text>
+        <Text style={styles.text}>Game's name</Text>
         <Pressable style={styles.button}  onPress={() => navigation.navigate('Game')}>
           <Text style={styles.button_text}>JOGAR</Text>
         </Pressable>
@@ -26,9 +25,13 @@ const styles = StyleSheet.create({
     height: 1000,
   },
   text: {
-    fontSize: 45, 
+    fontSize: 48, 
     paddingTop: 20,
-    paddingBottom: 400
+    paddingBottom: 400,
+    // fontFamily: 'Oval',
+    textShadowColor: 'white',
+    textShadowOffset: {width: -2, height: 1},
+    textShadowRadius: 20
   },
   image: {
     flex: 1,
@@ -46,9 +49,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#666261',
   },
   button_text: {
+    // fontFamily: 'Oval',
     fontSize: 16,
     lineHeight: 21,
-    fontWeight: 'bold',
     letterSpacing: 0.25,
     color: 'white',
   },
