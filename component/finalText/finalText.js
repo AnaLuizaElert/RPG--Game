@@ -1,21 +1,24 @@
 import React from "react";
 import { 
-  StyleSheet,
-  Text,
-  SafeAreaView,
-  ImageBackground,
-  Pressable}
+    StyleSheet, 
+    Text, 
+    View, 
+    SafeAreaView, 
+    ImageBackground, 
+    Pressable} 
 from 'react-native';
 
 const image = {uri: 'https://templatefor.net/wp-content/uploads/2018/04/iPhone-forest-mysterious-wallpaper-245619875-576x1024.jpg'};
 
-export default function Home({navigation}) {
+export default function TextFinal({route, navigation}) {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground source={image} resizeMode="cover" style={styles.image}>
-        <Text style={styles.text}>Game's name</Text>
-        <Pressable style={styles.button}  onPress={() => navigation.navigate('Game')}>
-          <Text style={styles.button_text}>JOGAR</Text>
+        <View style={styles.boxText}>
+            <Text style={styles.text}>{route.params.finalText}</Text>
+        </View>
+        <Pressable style={styles.button}  onPress={() => navigation.navigate('Home')}>
+          <Text style={styles.button_text}>Home</Text>
         </Pressable>
       </ImageBackground>
     </SafeAreaView>
@@ -30,15 +33,20 @@ const styles = StyleSheet.create({
     justifyContent: 'space-evenly',
     height: 1000,
   },
-  text: {
-    fontSize: 48, 
+  boxText: {
+    backgroundColor: 'rgba(86,102,55,0.5)',
+    height: 600,
+    width: 340,
+    paddingHorizontal: 20,
+    borderRadius: 4,
+    marginBottom: 50
+    },
+    text: {
+    fontSize: 22, 
     paddingTop: 20,
-    paddingBottom: 400,
-    // fontFamily: 'Oval',
-    textShadowColor: 'white',
-    textShadowOffset: {width: -2, height: 1},
-    textShadowRadius: 20
-  },
+    paddingBottom: 10,
+    color: 'white'
+    },
   image: {
     flex: 1,
     justifyContent: 'center',
