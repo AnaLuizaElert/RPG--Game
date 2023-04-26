@@ -1,9 +1,8 @@
 import * as React from 'react';
-import Home from './component/Home/home';
-import Game from './component/Game/game';
+import Game from './component/game/game';
+import Home from './component/home/home';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack'
-import { useFonts } from 'expo-font';
 
 
 const Stack = createNativeStackNavigator();
