@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
     fontSize: 48, 
     paddingTop: 20,
     paddingBottom: 400,
-    // fontFamily: 'Oval',
     textShadowColor: 'white',
     textShadowOffset: {width: -2, height: 1},
     textShadowRadius: 20
@@ -55,7 +54,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#666261',
   },
   button_text: {
-    // fontFamily: 'Oval',
     fontSize: 16,
     lineHeight: 21,
     letterSpacing: 0.25,

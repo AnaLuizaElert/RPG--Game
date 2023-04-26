@@ -8,11 +8,6 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack'
 
 const Stack = createNativeStackNavigator();
 
-
-  // const [loaded] = useFonts({
-  //   Oval: require('./assets/fonts/NovaOval-Regular.ttf')
-  // });
-
 const App = () => {
   return (
     <NavigationContainer>

@@ -63,7 +63,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#666261',
   },
   button_text: {
-    // fontFamily: 'Oval',
     fontSize: 16,
     lineHeight: 21,
     letterSpacing: 0.25,
